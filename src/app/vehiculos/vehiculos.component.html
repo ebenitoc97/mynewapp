@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+       <thead>
+         <tr>
+           <th class="h4">Marca</th>
+           <th class="h4">Linea</th>
+           <th class="h4">Modelo</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let c of vehiculos">
+           <td>
+             <dd>{{c.marca}}</dd>
+           </td>
+           <td>
+             <dd>{{c.linea}}</dd>
+           </td>
+           <td>
+            <dd>{{c.modelo}}</dd>
+           </td>
+       </tr>
+       </tbody>
+     </table>
+    <p>
+      El total de Nissan es: {{total1}}
+    </p>
+    <p>
+      El total de Renault es: {{total2}}
+    </p>
+    <p>
+      El total de Chevrolet es: {{total3}}
+    </p>
+   </div>
+</div>
